@@ -1,0 +1,96 @@
+.sectionData .about_first_span{
+   font-size: 3.2rem;
+}
+.sectionData .about_sec_span{
+   display: block;
+   font-size: 1.9rem;
+}
+.aboutList{
+    display: flex;
+    flex-direction: column;
+}
+.aboutList ul{
+    width: 95rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+ .aboutList ul li{
+    list-style: none;
+    font-size: 3rem;
+    margin-right: -7rem;
+    width: 51rem;
+    margin-top: 2rem;
+ }
+ .aboutList ul li:not(.phone)::before{
+    content: '';
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    width: 3rem;
+    height: 3rem;
+    background-image: url('../Images/redTick.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 1.0rem;
+   }
+   .aboutList ul .phone::before{
+      content: '';
+      display: inline-block;
+      position: relative;
+      top: 4px;
+      width: 3rem;
+      height: 3rem;
+      background-image: url('../Images/phoneIcon.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      margin-top: 1.8rem;
+      margin-right: 1.0rem;
+ }
+
+ @media (max-width: 900px) {
+   .sectionData .about_sec_span {
+      font-size: 2.3rem;
+  }  
+}
+@media (max-width: 760px) {
+   .sectionData .about_first_span{
+      font-size: 3.9rem;
+   }
+   .sectionData .about_sec_span {
+      font-size: 2.7rem;
+  }
+  .aboutList ul li::before, 
+  .aboutList ul li:nth-child(5):before {
+   top: 1.1rem;
+   width: 5rem;
+   height: 4rem;
+  }
+ }
+
+ @media (max-width: 650px) {
+   .sectionData .about_sec_span{
+      font-size: 2.6rem;
+   }
+ }
+ @media (max-width: 540px) {
+   .sectionData .about_first_span {
+      font-size: 3.7rem;
+  }
+  .sectionData .about_sec_span {
+   font-size: 2.95rem;
+}
+}
+@media (max-width: 310px) {
+   .aboutList ul{
+      width: 112rem;
+  }
+}
+@media (max-width: 300px) {
+   .aboutList ul li {
+      font-size: 4rem;
+      margin-right: 5rem;
+  }
+}

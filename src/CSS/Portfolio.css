@@ -1,0 +1,10 @@
+.servicesTabs{
+    width: 100%;
+    margin-top: 8.0rem;
+}
+.porfoIdeasSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+}

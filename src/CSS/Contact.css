@@ -1,0 +1,41 @@
+.form_div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+.contactForm{
+    width: 50%;
+}
+.sub_btn_div{
+    display: flex;
+    justify-content: center;
+}
+.contactForm .sub_btn{
+    background-color: #FF4137;
+    border-color: #FF4137;
+    display: block;
+    padding: 1rem;
+    border-radius: 60px;
+    font-size: 2.3rem;
+}
+.contactForm .field{
+    background: transparent;
+    border-radius: 3.4rem;
+    color: white;
+    padding: 2rem 2rem;
+    font-size: 2rem;
+    border-color: rgb(148, 147, 147);
+}
+.contactForm .field:not(.name){
+    margin: 3rem 0rem;
+}
+.contactForm .textArea{
+    padding: 2rem;
+    height: 27rem;
+}
+.contactForm .field::placeholder
+{
+    color: white!important; /* Change the placeholder color to gray */
+}

@@ -1,0 +1,17 @@
+.services_img{
+    width: 50rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+@media  (max-width: 760px) {
+    .services_img{
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+}
+@media  (max-width: 480px) {
+    .section1 .sectionData img{
+        width: 17rem;
+    }
+}

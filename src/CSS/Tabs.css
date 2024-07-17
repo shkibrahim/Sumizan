@@ -1,0 +1,111 @@
+.tab-container {
+    box-sizing: border-box;
+    margin: 20px 2px;
+  }
+  
+  .active{
+    background: #FF4137;
+    outline: 1px solid #FF4137;
+  }
+
+  .tab-buttons {
+    outline: 1px solid #acacacde;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    width: fit-content;
+    height: 8.0rem;
+    border-radius: 4.5rem;
+    overflow: hidden;
+  }
+
+  .tab-buttons button{
+    text-align: left;
+    border: 0px solid black;
+    padding: 0px 1.5rem;
+    height: 100%;
+    width: 15.5rem;
+    text-align: center;
+  } 
+  .tab-buttons button:hover{
+    background-color: #FF4137;
+    outline: 1px solid #FF4137;
+  }
+  .tab-buttons button:focus{
+    outline: 1px solid #FF4137;
+  }
+
+  .tab-buttons .btn_border{
+    width: 1px;
+    height: 5rem;
+    z-index: 1;
+    background-color: #FF4137;
+  }
+  .tab-buttons .last{
+    background: none;
+  }
+
+  .tab-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 0rem;
+  }
+  .right{
+    flex-direction: column;
+  }
+  .tab-content:not(.right){
+    justify-content: center;
+  }
+
+  .lazyload{
+    margin: 2rem 0rem;
+  }
+
+  .tab-content img {
+    margin: 0px 1.9rem;
+    height: 40rem;
+    overflow: hidden;
+    border-radius: 2rem;
+  }
+  
+  @media (max-width: 900px) {
+    .tab-buttons button{
+      font-size: 2rem;
+      width: 15rem;
+    }
+  }
+  @media (max-width: 760px) {
+    .tab-buttons {
+      height: 8rem;
+    }
+    .tab-buttons button{
+      font-size: 1.7rem;
+      width: 15rem;
+    }
+  }
+  @media (max-width: 600px) {
+    .tab-buttons img {
+      width: 3.0rem;
+      height: 3.0rem;
+    }
+    .tab-button{
+      width: 108%;
+      padding: 0rem 1rem;
+    }
+    .tab-buttons button{
+      margin: 0rem 0rem;
+      font-size: 1.7rem;
+      width: 14.3rem;
+    }
+  }
+
+  @media (max-width: 300px){
+    .tab-content {
+      padding: 0px;
+    }
+    .mainTab{
+      width : auto
+    }
+  }
